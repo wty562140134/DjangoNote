@@ -10,6 +10,17 @@
     python manage.py <app_name>
 ## 4.运行工程：
     python manage.py runserver <port>
+## 5.查看Django命令:
+   ### 1.
+    django-admin.py help
+   或
+   
+    django-admin help
+   ### 2.
+    python manage.py help
+   或
+    
+    python manage help
 
 ### 注意:
 #### django必须能连上数据库才能运行,所以必须在settings.py中进行设置数据库连接,连接信息将{DATABASES}中的 'ENGINE': 'django.db.backends.mysql'中的mysql换成需要的数据库,并配置好相应的登录信息即可<br>
