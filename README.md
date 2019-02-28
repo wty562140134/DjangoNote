@@ -3,7 +3,8 @@
     pip install django==<version>
 ## 2.创建工程：<br>
     django-admin.py startporject <porject_name> <dir_path>
-   或<br>
+   或
+   
     django-admin startporject <porject_name> <dir_path>
 ## 3.创建应用：<br>
     python manage.py <app_name>
