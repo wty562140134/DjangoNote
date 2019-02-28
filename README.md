@@ -9,5 +9,5 @@
 ## 3.创建应用：<br>
     python manage.py <app_name>
 ## 4.运行工程：<br>
-    python manage.py runserver <pt>
+    python manage.py runserver <port>
 
