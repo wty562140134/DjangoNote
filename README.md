@@ -25,3 +25,11 @@
    安装.mhl需要先先安装wheel使用:
    
     pip install wheel
+    
+   安装.mhl时会出现安装不了的情况,是由于python的每个不同版本只支持自己版本的.mhl文件,所以需要将文件中的版本类型改为自己python相同的版本例如:
+            
+    mysqlclient-1.4.2-cp35-cp35m-win32.whl
+   改为:
+   
+    mysqlclient-1.4.2-cp33-cp33m-win32.whl
+   即可.
