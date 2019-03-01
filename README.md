@@ -8,9 +8,28 @@
     django-admin startporject <porject_name> <dir_path>
 ## 3.创建应用：
     python manage.py <app_name>
-## 4.运行工程：
+## 4.数据库:
+    python manage.py syncdb (1.6以前)
+    注意:这句话只会将我们在 models.py 中新加的类创建相应的表。
+   或
+   
+    python manage.py migrate (1.7X后)
+   ### 变更数据库结构:
+        python manage.py makemigrations (1.7X后)
+   (1.6以前)如果在原来的类上增加字段或者删除字段，可以参考这个命令：
+   
+        python manage.py sql appname
+   ### 清空数据库表,只留下表:
+        python manage.py flush
+   ### 导入导出表:
+        python manage.py dumpdata <app_name> > <app_name.json> (若不指定app_name则会导出所有数据)
+        python manage.py loaddata appname.json
+## 5.创建管理员:
+        python manage.py createsuperuser
+        python manage.py changepassword <user_name> (更改管理员密码)
+## 6.运行工程：
     python manage.py runserver <port>
-## 5.查看Django命令:
+## 7.查看Django命令:
    ### 1.
     django-admin.py help
    或
