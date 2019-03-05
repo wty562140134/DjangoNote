@@ -13,9 +13,11 @@
     注意:这句话只会将我们在 models.py 中新加的类创建相应的表。
    或
    
+    python manage.py makemigrations (1.7X后)
     python manage.py migrate (1.7X后)
    ### 变更数据库结构:
         python manage.py makemigrations (1.7X后)
+        python manage.py migrate (1.7X后)
    (1.6以前)如果在原来的类上增加字段或者删除字段，可以参考这个命令：
    
         python manage.py sql appname
@@ -37,9 +39,6 @@
     django-admin help
    ### 2.
     python manage.py help
-   或
-    
-    python manage help
 
 ### 注意:
 #### django必须能连上数据库才能运行,所以必须在settings.py中进行设置数据库连接,连接信息将{DATABASES}中的 'ENGINE': 'django.db.backends.mysql'中的mysql换成需要的数据库,并配置好相应的登录信息即可<br>
